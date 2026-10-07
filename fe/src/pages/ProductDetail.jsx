@@ -58,11 +58,11 @@ const ProductDetail = () => {
             <div className="row mb-5">
                 <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
                     <div className="product-detail-image mb-3 border rounded shadow-sm bg-white p-3">
-                        <img src={mainImage ? `${IMAGE_BASE_URL}/${mainImage}` : 'https://via.placeholder.com/400?text=No+Image'}
+                        <img src={mainImage ? `${IMAGE_BASE_URL}/${mainImage}` : 'https://placehold.co/400?text=No+Image'}
                             className="img-fluid"
                             alt={product.name}
                             style={{ maxHeight: '400px', objectFit: 'contain', width: '100%' }}
-                            onError={(e) => { e.target.src = 'https://via.placeholder.com/400?text=No+Image' }}
+                            onError={(e) => { e.target.src = 'https://placehold.co/400?text=No+Image' }}
                         />
                     </div>
                     {/* Fake Thumbnails */}
@@ -70,7 +70,7 @@ const ProductDetail = () => {
                         {[product.image_url, product.image_url, product.image_url, product.image_url].map((img, idx) => (
                             <div className="col-3" key={idx} onClick={() => setMainImage(img)}>
                                 <div className={`thumbnail-item border rounded p-1 cursor-pointer ${mainImage === img && idx === 0 ? 'border-primary' : ''}`}>
-                                    <img src={img ? `${IMAGE_BASE_URL}/${img}` : 'https://via.placeholder.com/100?text=No+Image'} className="img-fluid" alt={`Thumb ${idx}`} onError={(e) => { e.target.src = 'https://via.placeholder.com/100?text=No+Image' }} />
+                                    <img src={img ? `${IMAGE_BASE_URL}/${img}` : 'https://placehold.co/100?text=No+Image'} className="img-fluid" alt={`Thumb ${idx}`} onError={(e) => { e.target.src = 'https://placehold.co/100?text=No+Image' }} />
                                 </div>
                             </div>
                         ))}
@@ -197,11 +197,11 @@ const ProductDetail = () => {
                                 <div className="col-md-3 col-sm-6" key={relProduct.id}>
                                     <div className="card h-100 shadow-sm product-card border-0">
                                         <div className="position-relative bg-light overflow-hidden">
-                                            <img src={relProduct.image_url ? `${IMAGE_BASE_URL}/${relProduct.image_url}` : 'https://via.placeholder.com/200?text=No+Image'}
+                                            <img src={relProduct.image_url ? `${IMAGE_BASE_URL}/${relProduct.image_url}` : 'https://placehold.co/200?text=No+Image'}
                                                 className="card-img-top product-image"
                                                 alt={relProduct.name}
                                                 style={{ height: '200px', objectFit: 'cover' }}
-                                                onError={(e) => { e.target.src = 'https://via.placeholder.com/200?text=No+Image' }}
+                                                onError={(e) => { e.target.src = 'https://placehold.co/200?text=No+Image' }}
                                             />
                                         </div>
                                         <div className="card-body d-flex flex-column p-3">

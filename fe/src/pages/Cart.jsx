@@ -42,11 +42,11 @@ const Cart = () => {
                                     <tr key={item.product_id}>
                                         <td className="px-4">
                                             <Link to={`/products/${item.product.id}`}>
-                                                <img src={item.product.image_url ? `${IMAGE_BASE_URL}/${item.product.image_url}` : 'https://via.placeholder.com/80?text=No+Image'}
+                                                <img src={item.product.image_url ? `${IMAGE_BASE_URL}/${item.product.image_url}` : 'https://placehold.co/80?text=No+Image'}
                                                     alt={item.product.name}
                                                     style={{ width: '80px', height: '80px', objectFit: 'cover' }}
                                                     className="rounded border"
-                                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/80?text=No+Image' }}
+                                                    onError={(e) => { e.target.src = 'https://placehold.co/80?text=No+Image' }}
                                                 />
                                             </Link>
                                         </td>

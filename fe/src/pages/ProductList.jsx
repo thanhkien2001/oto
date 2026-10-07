@@ -115,9 +115,9 @@ const ProductList = () => {
                     <div className="col-md-3 col-sm-6" key={product.id}>
                         <div className="card h-100 shadow-sm product-card border-0">
                             <div className="position-relative bg-light overflow-hidden">
-                                <img src={product.image_url ? `${IMAGE_BASE_URL}/${product.image_url}` : 'https://via.placeholder.com/200?text=No+Image'} className="card-img-top product-image" alt={product.name}
+                                <img src={product.image_url ? `${IMAGE_BASE_URL}/${product.image_url}` : 'https://placehold.co/200?text=No+Image'} className="card-img-top product-image" alt={product.name}
                                     style={{ height: '200px', objectFit: 'cover' }}
-                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/200' }}
+                                    onError={(e) => { e.target.src = 'https://placehold.co/200' }}
                                 />
                             </div>
                             <div className="card-body d-flex flex-column p-3">

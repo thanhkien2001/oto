@@ -125,7 +125,7 @@ const OrderList = () => {
                                                 <tr key={det.id} className="border-bottom">
                                                     <td className="px-3">
                                                         <div className="d-flex align-items-center">
-                                                            <img src={`/uploads/${det.product.image_url}`} width="40" height="40" className="rounded border me-2" alt="" onError={e => e.target.src = 'https://via.placeholder.com/40'} />
+                                                            <img src={`/uploads/${det.product.image_url}`} width="40" height="40" className="rounded border me-2" alt="" onError={e => e.target.src = 'https://placehold.co/40'} />
                                                             <span className="fw-medium">{det.product.name}</span>
                                                         </div>
                                                     </td>

@@ -19,6 +19,7 @@ import AdminDashboard from './pages/admin/Dashboard';
 import AdminCategoryList from './pages/admin/CategoryList';
 import AdminProductList from './pages/admin/ProductList';
 import AdminOrderList from './pages/admin/OrderList';
+import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
               <Route path="orders" element={<AdminOrderList />} />
             </Route>
           </Routes>
+          <ChatWidget />
         </Router>
       </CartProvider>
     </AuthProvider>

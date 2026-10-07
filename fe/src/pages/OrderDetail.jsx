@@ -84,11 +84,11 @@ const OrderDetail = () => {
                                     <tr key={detail.id}>
                                         <td className="px-4 py-3">
                                             <div className="d-flex align-items-center">
-                                                <img src={detail.product.image_url ? `${IMAGE_BASE_URL}/${detail.product.image_url}` : 'https://via.placeholder.com/60?text=No+Image'}
+                                                <img src={detail.product.image_url ? `${IMAGE_BASE_URL}/${detail.product.image_url}` : 'https://placehold.co/60?text=No+Image'}
                                                     alt={detail.product.name}
                                                     className="rounded border me-3"
                                                     style={{ width: '60px', height: '60px', objectFit: 'cover' }}
-                                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/60?text=No+Image' }}
+                                                    onError={(e) => { e.target.src = 'https://placehold.co/60?text=No+Image' }}
                                                 />
                                                 <div>
                                                     <h6 className="mb-0 fw-medium text-dark">{detail.product.name}</h6>

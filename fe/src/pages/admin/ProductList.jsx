@@ -164,11 +164,11 @@ const ProductList = () => {
                                                     style={{ maxWidth: '100%', maxHeight: '300px', display: 'block' }}
                                                     alt="Preview" />
                                             ) : (
-                                                <img src={formData.image_url ? `${IMAGE_BASE_URL}/${formData.image_url}` : 'https://via.placeholder.com/300x200?text=No+Image'}
+                                                <img src={formData.image_url ? `${IMAGE_BASE_URL}/${formData.image_url}` : 'https://placehold.co/300x200?text=No+Image'}
                                                     className="img-thumbnail"
                                                     style={{ maxWidth: '100%', maxHeight: '300px', display: 'block' }}
                                                     alt="Current"
-                                                    onError={e => e.target.src = 'https://via.placeholder.com/300x200?text=No+Image'} />
+                                                    onError={e => e.target.src = 'https://placehold.co/300x200?text=No+Image'} />
                                             )}
                                         </div>
                                     </div>
@@ -208,9 +208,9 @@ const ProductList = () => {
                                     <tr key={product.id}>
                                         <td>{product.id}</td>
                                         <td>
-                                            <img src={product.image_url ? `${IMAGE_BASE_URL}/${product.image_url}` : 'https://via.placeholder.com/60'}
+                                            <img src={product.image_url ? `${IMAGE_BASE_URL}/${product.image_url}` : 'https://placehold.co/60'}
                                                 width="60" height="60" className="object-fit-cover" alt={product.name}
-                                                onError={e => e.target.src = 'https://via.placeholder.com/60'} />
+                                                onError={e => e.target.src = 'https://placehold.co/60'} />
                                         </td>
                                         <td>{product.name}</td>
                                         <td>{product.category?.name}</td>

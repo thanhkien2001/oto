@@ -93,10 +93,10 @@ const Home = () => {
                                         <div className="col-md-3 col-sm-6" key={product.id}>
                                             <div className="card product-card h-100 shadow-sm border-0">
                                                 <div className="position-relative bg-light overflow-hidden">
-                                                    <img src={product.image_url ? `${IMAGE_BASE_URL}/${product.image_url}` : 'https://via.placeholder.com/300x200?text=No+Image'}
+                                                    <img src={product.image_url ? `${IMAGE_BASE_URL}/${product.image_url}` : 'https://placehold.co/300x200?text=No+Image'}
                                                         className="card-img-top product-image"
                                                         alt={product.name}
-                                                        onError={(e) => { e.target.src = 'https://via.placeholder.com/300x200?text=No+Image' }}
+                                                        onError={(e) => { e.target.src = 'https://placehold.co/300x200?text=No+Image' }}
                                                     />
                                                 </div>
                                                 <div className="card-body d-flex flex-column p-4">
