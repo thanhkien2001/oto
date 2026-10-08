@@ -97,6 +97,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/products/{id}', [ProductController::class, 'update']);
     Route::delete('/products/{id}', [ProductController::class, 'destroy']);
 
+    Route::get('/admin/stats', [\App\Http\Controllers\Api\DashboardController::class, 'stats']);
     Route::get('/admin/orders', [OrderController::class, 'adminIndex']);
     Route::put('/admin/orders/{id}', [OrderController::class, 'update']);
 });

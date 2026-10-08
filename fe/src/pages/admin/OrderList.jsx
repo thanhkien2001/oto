@@ -61,8 +61,8 @@ const OrderList = () => {
                                 <td className="px-4">
                                     <select
                                         className={`form-select form-select-sm border-0 fw-bold ${order.status === 'Chờ xác nhận' ? 'text-warning bg-warning-subtle' :
-                                                order.status === 'Đã giao' ? 'text-success bg-success-subtle' :
-                                                    order.status === 'Đã hủy' ? 'text-danger bg-danger-subtle' : 'text-primary bg-primary-subtle'
+                                            order.status === 'Đã giao' ? 'text-success bg-success-subtle' :
+                                                order.status === 'Đã hủy' ? 'text-danger bg-danger-subtle' : 'text-primary bg-primary-subtle'
                                             }`}
                                         value={order.status}
                                         onChange={(e) => handleStatusChange(order.id, e.target.value)}
@@ -125,7 +125,7 @@ const OrderList = () => {
                                                 <tr key={det.id} className="border-bottom">
                                                     <td className="px-3">
                                                         <div className="d-flex align-items-center">
-                                                            <img src={`/uploads/${det.product.image_url}`} width="40" height="40" className="rounded border me-2" alt="" onError={e => e.target.src = 'https://placehold.co/40'} />
+                                                            <img src={`http://127.0.0.1:8000/uploads/${det.product.image_url}`} width="40" height="40" className="rounded border me-2" alt="" onError={e => e.target.src = 'https://placehold.co/40'} />
                                                             <span className="fw-medium">{det.product.name}</span>
                                                         </div>
                                                     </td>
